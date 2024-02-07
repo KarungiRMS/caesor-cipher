@@ -1,11 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caesar's Cipher 101</title>
-</head>
-<body>
-    <script src="cipher.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="cipher.css" />
+        <title>Caesar's Cipher 101</title>
+    </head>
+    <body>
+        <div id="parentDiv">
+            <div id="encryptDiv">
+                <h2>Encrypt your Text</h2>
+                <div class="mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="textToEncrypt"
+                        placeholder="Enter text to be Encrypted"
+                    />
+                </div>
+                <div id="encryptedResults"></div>
+            </div>
+            <div id="decryptDiv">
+                <h2>Decrypt your Text</h2>
+                <div class="mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="textToDecrypt"
+                        placeholder="Enter text to be Decrypted"
+                    />
+                </div>
+                <div id="decryptedResults"></div>
+            </div>
+        </div>
+        <script src="cipher.js"></script>
+    </body>
 </html>
