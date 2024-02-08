@@ -10,29 +10,30 @@
         <div id="parentDiv">
             <div id="encryptDiv">
                 <h2>Encrypt your Text</h2>
-                <div class="mb-3">
+                <form id="encryptForm">
                     <input
                         type="text"
-                        class="form-control"
                         id="textToEncrypt"
                         placeholder="Enter text to be Encrypted"
                     />
-                </div>
+                    <button type="submit">Encrypt</button>
+                </form>
                 <div id="encryptedResults"></div>
             </div>
             <div id="decryptDiv">
                 <h2>Decrypt your Text</h2>
-                <div class="mb-3">
+                <form id="decryptForm">
                     <input
                         type="text"
-                        class="form-control"
                         id="textToDecrypt"
                         placeholder="Enter text to be Decrypted"
                     />
-                </div>
+                    <button type="submit">Decrypt</button>
+                </form>
                 <div id="decryptedResults"></div>
             </div>
         </div>
-        <script src="cipher.js"></script>
+        <script src="encryption.js"></script>
+        <script src="decryption.js"></script>
     </body>
 </html>
