@@ -1,6 +1,7 @@
 const alphabet = "abcdefghijklmnopqrstuvwxyz";
 const encryptForm = document.getElementById("encryptForm");
 const textToEncrypt = document.getElementById("textToEncrypt");
+const shiftValue = document.getElementById('shiftValueEncrypt');
 const encryptDiv = document.getElementById('encryptedResults');
 
 //To encrypt each letter
@@ -39,7 +40,7 @@ function encrypt(message, shift) {
 
 encryptForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  const encryptedMessage = encrypt(textToEncrypt.value, 42);
+  const encryptedMessage = encrypt(textToEncrypt.value, parseInt(shiftValue.value));
   const plainText = document.createElement('p');
   const encryptResults = document.createElement('p');
   plainText.innerText = `Original text is: ${textToEncrypt.value}`;

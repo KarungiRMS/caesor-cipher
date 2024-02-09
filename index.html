@@ -1,41 +1,45 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="cipher.css" />
-        <title>Caesar's Cipher 101</title>
-    </head>
-    <body>
-        <h1 style="text-align: center;">Caesar's Cipher Reloaded</h1>
-        <h3 style="margin: 20px 120px;">In ancient Rome 🏛️, Julius Caesar was impressed by the effectiveness of his cipher. But as the secret parties grew more popular 🎉, manually shifting each letter became tedious. It was time for automation! Caesar summoned his best scribes and mathematicians 📜 to design a system - a system that could encrypt and decrypt messages at will!</h3>
-        <div id="parentDiv">
-            <div id="encryptDiv">
-                <h2>Encrypt your Text</h2>
-                <form id="encryptForm">
-                    <input
-                        type="text"
-                        id="textToEncrypt"
-                        placeholder="Enter text to be Encrypted"
-                    />
-                    <button type="submit">Encrypt</button>
-                </form>
-                <div id="encryptedResults"></div>
-            </div>
-            <div id="decryptDiv">
-                <h2>Decrypt your Text</h2>
-                <form id="decryptForm">
-                    <input
-                        type="text"
-                        id="textToDecrypt"
-                        placeholder="Enter text to be Decrypted"
-                    />
-                    <button type="submit">Decrypt</button>
-                </form>
-                <div id="decryptedResults"></div>
-            </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cipher.css" />
+    <title>Caesar's Cipher 101</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Caesar's Cipher Reloaded</h1>
+    <h3 style="margin: 20px 120px;">In ancient Rome 🏛️, Julius Caesar was impressed by the effectiveness of his cipher.
+        But as the secret parties grew more popular 🎉, manually shifting each letter became tedious. It was time for
+        automation! Caesar summoned his best scribes and mathematicians 📜 to design a system - a system that could
+        encrypt and decrypt messages at will!</h3>
+    <div id="parentDiv">
+
+        <div id="encryptDiv">
+            <h2>Encrypt your Text</h2>
+            <form id="encryptForm">
+                <input type="text" id="textToEncrypt" placeholder="Enter text to be Encrypted" />
+                <input type="text" id="shiftValueEncrypt" placeholder="Enter a number that will be used as the shift value"
+                    min="1" />
+                <button type="submit">Encrypt</button>
+            </form>
+            <div id="encryptedResults"></div>
         </div>
-        <script src="encryption.js"></script>
-        <script src="decryption.js"></script>
-    </body>
+
+        <div id="decryptDiv">
+            <h2>Decrypt your Text</h2>
+            <form id="decryptForm">
+                <input type="text" id="textToDecrypt" placeholder="Enter text to be Decrypted" />
+                <input type="text" id="shiftValueDecrypt" placeholder="Enter a number that will be used as the shift value"
+                    min="1" />
+                <button type="submit">Decrypt</button>
+            </form>
+            <div id="decryptedResults"></div>
+        </div>
+    </div>
+    <script src="encryption.js"></script>
+    <script src="decryption.js"></script>
+</body>
+
 </html>

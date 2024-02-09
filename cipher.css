@@ -5,11 +5,17 @@
 
 button {
     padding: 10px 50px;
-    margin-top: 5px;
+    margin-top: 25px;
     cursor: pointer;
 }
 
 input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="number"] {
     width: 100%;
     padding: 10px;
     cursor: pointer;
@@ -43,19 +49,28 @@ input[type="text"] {
 }
 
 #encryptDiv {
-    width: 600px;
-    border: 5px dashed rgb(15, 1, 98);
+    width: 500px;
+    border-right: 5px dashed green;
     margin: 0 auto;
     padding: 30px;
 }
 
+#encryptDiv h2{
+    color: blue;
+}
+
 #decryptDiv {
-    width: 600px;
-    border: 5px dashed purple;
+    width: 500px;
+    /* border: 5px dashed purple; */
     margin: 0 auto;
     padding: 30px;
+}
+
+#decryptDiv h2{
+    color: purple;
 }
 
 h2 {
     width: 100%;
 }
+

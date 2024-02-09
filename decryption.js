@@ -1,6 +1,7 @@
 const decryptForm = document.getElementById("decryptForm");
 const textToDecrypt = document.getElementById("textToDecrypt");
 const decryptDiv = document.getElementById('decryptedResults');
+const shiftValueDecrypt = document.getElementById('shiftValueDecrypt');
 
 //Decrypt each character
 function decryptLetter(letter, shift){
@@ -39,7 +40,7 @@ function decrypt (encryptedNewMessage, shift)
 
 decryptForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  const encryptedMessage = decrypt(textToDecrypt.value, 42);
+  const encryptedMessage = decrypt(textToDecrypt.value, parseInt(shiftValueDecrypt.value));
   const plainText = document.createElement('p');
   const decryptResults = document.createElement('p');
   plainText.innerText = `Original(Encrypted Text) text is: ${textToDecrypt.value}`;
